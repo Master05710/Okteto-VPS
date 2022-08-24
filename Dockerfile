@@ -10,7 +10,7 @@ RUN a2enmod  rewrite
 RUN wget https://raw.githubusercontent.com/Master05710/Okteto-VPS/main/000-default.conf
 RUN rm /etc/apache2/sites-available/000-default.conf
 RUN mv 000-default.conf /etc/apache2/sites-available
-RUN echo 'Успешно!\ntelegram: @GGCheaterBodi' >/var/www/html/index.html
+RUN echo 'Successful!\ntelegram: @GGCheaterBodi' >/var/www/html/index.html
 RUN echo 'wstunnel -s 0.0.0.0:8989 & ' >>/luo.sh
 RUN echo 'service mysql restart' >>/luo.sh
 RUN echo 'service apache2 restart' >>/luo.sh
